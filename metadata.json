@@ -1,0 +1,8 @@
+{
+  "name": "Tes Sumatif Matematika Kelas 4 - SD Negeri 3 Loloan Timur",
+  "description": "Aplikasi Tes Sumatif Matematika Kelas IV SD Negeri 3 Loloan Timur Materi Pola Gambar dan Pola Bilangan dengan 4 tahap tes, sinkronisasi otomatis Google Spreadsheet, unduh PDF laporan & naskah soal, serta panel guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
