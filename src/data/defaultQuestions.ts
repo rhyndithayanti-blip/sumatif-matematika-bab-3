@@ -12,7 +12,7 @@ import {
 
 export const INITIAL_QUESTIONS: Question[] = [
   // =========================================================================
-  // BAGIAN 1: PILIHAN GANDA (25 SOAL)
+  // BAGIAN 1: PILIHAN GANDA (20 SOAL)
   // =========================================================================
 
   // Soal 1 (Pola Korek Api Segitiga)
@@ -391,103 +391,14 @@ export const INITIAL_QUESTIONS: Question[] = [
       'Pola bilangan ini selalu berkurang 9 (-9):\n45 - 9 = 36\n36 - 9 = 27.',
   },
 
-  // Soal 21 (Pola Kubus Tingkat Ganjil)
-  {
-    id: 21,
-    type: 'pg',
-    topic: 'Pola Gambar Membesar',
-    difficulty: 'Sedang',
-    text: 'Siswa kelas 4 menyusun balok kubus membentuk piramida berundak: tingkat 1 ada 1 kubus, tingkat 2 ada 3 kubus, tingkat 3 ada 5 kubus, tingkat 4 ada 7 kubus.\nBerapa banyak kubus yang menyusun tingkat ke-7?',
-    options: [
-      { id: 'A', text: '13 kubus' },
-      { id: 'B', text: '11 kubus' },
-      { id: 'C', text: '15 kubus' },
-      { id: 'D', text: '17 kubus' },
-    ],
-    correctAnswer: 'A',
-    explanation:
-      'Urutan bilangan ganjil:\nTingkat 1 = 1\nTingkat 2 = 3\nTingkat 3 = 5\nTingkat 4 = 7\nTingkat 5 = 9\nTingkat 6 = 11\nTingkat 7 = 13 kubus.',
-  },
-
-  // Soal 22 (Pola Perkalian 3)
-  {
-    id: 22,
-    type: 'pg',
-    topic: 'Aturan Pola Bilangan',
-    difficulty: 'Sedang',
-    text: 'Perhatikan barisan bilangan: 2, 6, 18, 54, 162.\nAturan yang paling tepat untuk barisan bilangan tersebut adalah...',
-    options: [
-      { id: 'A', text: 'Dikalikan 3 dari bilangan sebelumnya' },
-      { id: 'B', text: 'Ditambah 4 dari bilangan sebelumnya' },
-      { id: 'C', text: 'Dikalikan 2 lalu ditambah 2' },
-      { id: 'D', text: 'Ditambah 12 dari bilangan sebelumnya' },
-    ],
-    correctAnswer: 'A',
-    explanation:
-      '2 x 3 = 6; 6 x 3 = 18; 18 x 3 = 54; 54 x 3 = 162. Pola dibentuk dengan mengalikan 3 bilangan sebelumnya.',
-  },
-
-  // Soal 23 (Pola Buku di Perpustakaan)
-  {
-    id: 23,
-    type: 'pg',
-    topic: 'Soal Cerita Pola Bilangan',
-    difficulty: 'Sedang',
-    text: 'Di perpustakaan SD Negeri 3 Loloan Timur, buku ensiklopedia ditata di rak bertingkat: rak ke-1 berisi 24 buku, rak ke-2 berisi 30 buku, rak ke-3 berisi 36 buku.\nJika pola penataan buku terus berlanjut sama, banyak buku di rak ke-5 adalah...',
-    options: [
-      { id: 'A', text: '48 buku' },
-      { id: 'B', text: '42 buku' },
-      { id: 'C', text: '54 buku' },
-      { id: 'D', text: '50 buku' },
-    ],
-    correctAnswer: 'A',
-    explanation:
-      'Pola bertambah 6 buku setiap rak:\nRak 1 = 24\nRak 2 = 30\nRak 3 = 36\nRak 4 = 42\nRak 5 = 48 buku.',
-  },
-
-  // Soal 24 (Pola Ganjil Berurutan)
-  {
-    id: 24,
-    type: 'pg',
-    topic: 'Pola Bilangan Membesar',
-    difficulty: 'Mudah',
-    text: 'Perhatikan deretan bilangan ganjil berikut:\n13, 15, 17, 19, 21, ..., ..., 27\n\nDua bilangan ganjil yang hilang untuk mengisi titik-titik tersebut adalah...',
-    options: [
-      { id: 'A', text: '23 dan 25' },
-      { id: 'B', text: '22 dan 24' },
-      { id: 'C', text: '23 dan 26' },
-      { id: 'D', text: '24 dan 25' },
-    ],
-    correctAnswer: 'A',
-    explanation:
-      'Pola bilangan ganjil bertambah 2: setelah 21 adalah 21 + 2 = 23, lalu 23 + 2 = 25, dilanjutkan 27.',
-  },
-
-  // Soal 25 (Pola Bilangan Melangkah Mundur)
-  {
-    id: 25,
-    type: 'pg',
-    topic: 'Pola Bilangan Mengecil',
-    difficulty: 'Sedang',
-    text: 'Diberikan barisan bilangan mengecil: 120, 110, 100, 90, ...\nAgar pola tersebut mencapai angka 40, berapa langkah pengurangan lagi yang harus dilakukan setelah angka 90?',
-    options: [
-      { id: 'A', text: '5 langkah' },
-      { id: 'B', text: '4 langkah' },
-      { id: 'C', text: '6 langkah' },
-      { id: 'D', text: '3 langkah' },
-    ],
-    correctAnswer: 'A',
-    explanation:
-      'Pola berkurang 10 setiap langkah:\nSetelah 90:\nLangkah 1: 80\nLangkah 2: 70\nLangkah 3: 60\nLangkah 4: 50\nLangkah 5: 40.\nJadi diperlukan 5 langkah lagi.',
-  },
-
   // =========================================================================
   // BAGIAN 2: PILIHAN GANDA KOMPLEKS (PGK) KATEGORI BENAR/SALAH (5 SOAL)
+  // HARUS DIRESPON TIAP PERNYATAAN
   // =========================================================================
 
-  // Soal 26 (PGK Kategori)
+  // Soal 21 (PGK Kategori)
   {
-    id: 26,
+    id: 21,
     type: 'pgk_kategori',
     topic: 'Pola Bilangan Membesar',
     difficulty: 'Sedang',
@@ -513,9 +424,9 @@ export const INITIAL_QUESTIONS: Question[] = [
       '1. Selisih 13 - 6 = 7, 20 - 13 = 7, 27 - 20 = 7. Jadi aturan bertambah 7 (BENAR).\n2. Suku ke-6 = 34 + 7 = 41 (BENAR).\n3. Lanjutan suku berikutnya: 41 + 7 = 48, lalu 48 + 7 = 55. Bilangan 50 tidak ada dalam barisan (SALAH).',
   },
 
-  // Soal 27 (PGK Kategori)
+  // Soal 22 (PGK Kategori)
   {
-    id: 27,
+    id: 22,
     type: 'pgk_kategori',
     topic: 'Pola Gambar Batang Korek Api',
     difficulty: 'Sedang',
@@ -541,9 +452,9 @@ export const INITIAL_QUESTIONS: Question[] = [
       '1. Segitiga pertama butuh 3 batang, segitiga selanjutnya hanya menambah 2 batang karena satu sisi dipakai bersama (BENAR).\n2. Pola ke-5 = 9 + 2 = 11 batang (BENAR).\n3. Pola ke-6 = 11 + 2 = 13 batang, di mana 13 adalah bilangan ganjil, bukan genap (SALAH).',
   },
 
-  // Soal 28 (PGK Kategori)
+  // Soal 23 (PGK Kategori)
   {
-    id: 28,
+    id: 23,
     type: 'pgk_kategori',
     topic: 'Pola Bilangan Mengecil',
     difficulty: 'Sedang',
@@ -569,9 +480,9 @@ export const INITIAL_QUESTIONS: Question[] = [
       '1. Selisih 90 - 82 = 8, 82 - 74 = 8, 74 - 66 = 8, aturannya berkurang 8 (BENAR).\n2. Suku ke-6 = 58 - 8 = 50, suku ke-7 = 50 - 8 = 42 (BENAR).\n3. Suku ke-8 = 42 - 8 = 34. Nilai 34 bernilai positif, bukan negatif (SALAH).',
   },
 
-  // Soal 29 (PGK Kategori)
+  // Soal 24 (PGK Kategori)
   {
-    id: 29,
+    id: 24,
     type: 'pgk_kategori',
     topic: 'Pola Gambar Persegi Kuadrat',
     difficulty: 'Sedang',
@@ -597,9 +508,9 @@ export const INITIAL_QUESTIONS: Question[] = [
       '1. Pola ke-6 = 6 x 6 = 36 ubin (BENAR).\n2. Selisih = 16 - 9 = 7 ubin (BENAR).\n3. Penambahan ubin adalah: +3, +5, +7, +9, ... (penambahannya membesar berupa bilangan ganjil, bukan penambahan tetap) (SALAH).',
   },
 
-  // Soal 30 (PGK Kategori)
+  // Soal 25 (PGK Kategori)
   {
-    id: 30,
+    id: 25,
     type: 'pgk_kategori',
     topic: 'Pola Gambar Terapan Meja Rapat',
     difficulty: 'Sedang',
@@ -623,74 +534,5 @@ export const INITIAL_QUESTIONS: Question[] = [
     ],
     explanation:
       '1. Kapasitas bertambah 2 kursi setiap penambahan meja (BENAR).\n2. Rumus kursi = (2 x jumlah meja) + 2. Untuk 5 meja = (2 x 5) + 2 = 12 kursi (BENAR).\n3. Jika butuh 16 kursi: (2 x n) + 2 = 16 -> 2n = 14 -> n = 7 meja, bukan 8 meja (SALAH).',
-  },
-
-  // =========================================================================
-  // BAGIAN 3: ISIAN SINGKAT (5 SOAL)
-  // =========================================================================
-
-  // Soal 31 (Isian)
-  {
-    id: 31,
-    type: 'isian',
-    topic: 'Pola Bilangan Membesar',
-    difficulty: 'Mudah',
-    text: 'Perhatikan barisan bilangan membesar berikut ini:\n14, 22, 30, 38, ...\n\nBilangan berikutnya pada barisan tersebut adalah...',
-    correctAnswer: '46',
-    acceptedAnswers: ['46', 'empat puluh enam'],
-    explanation:
-      'Barisan bertambah 8 secara teratur (+8): 14 + 8 = 22; 22 + 8 = 30; 30 + 8 = 38; 38 + 8 = 46.',
-  },
-
-  // Soal 32 (Isian)
-  {
-    id: 32,
-    type: 'isian',
-    topic: 'Pola Bilangan Mengecil',
-    difficulty: 'Mudah',
-    text: 'Perhatikan barisan bilangan mengecil berikut:\n85, 76, 67, 58, ...\n\nSuku berikutnya setelah bilangan 58 adalah...',
-    correctAnswer: '49',
-    acceptedAnswers: ['49', 'empat puluh sembilan'],
-    explanation:
-      'Pola bilangan berkurang 9 secara konsisten (-9): 85 - 9 = 76; 76 - 9 = 67; 67 - 9 = 58; 58 - 9 = 49.',
-  },
-
-  // Soal 33 (Isian)
-  {
-    id: 33,
-    type: 'isian',
-    topic: 'Pola Gambar Lingkaran Bertingkat',
-    difficulty: 'Sedang',
-    text: 'Rina menyusun kelereng dalam kelompok berpola:\nKelompok 1 = 3 kelereng\nKelompok 2 = 6 kelereng\nKelompok 3 = 9 kelereng\nKelompok 4 = 12 kelereng\n\nBanyak kelereng pada Kelompok ke-7 adalah... butir.',
-    correctAnswer: '21',
-    acceptedAnswers: ['21', '21 butir', 'dua puluh satu'],
-    explanation:
-      'Pola ini adalah kelipatan 3 (3 x n): Kelompok 7 = 3 x 7 = 21 kelereng.',
-  },
-
-  // Soal 34 (Isian)
-  {
-    id: 34,
-    type: 'isian',
-    topic: 'Soal Cerita Pola Bilangan',
-    difficulty: 'Sedang',
-    text: 'Di taman sekolah SD Negeri 3 Loloan Timur, pot tanaman ditata berbaris:\nBaris pertama ada 5 pot bunga\nBaris kedua ada 9 pot bunga\nBaris ketiga ada 13 pot bunga\n\nJika penataan pot bunga mengikuti pola penambahan yang sama, banyak pot bunga pada baris kelima adalah... pot.',
-    correctAnswer: '21',
-    acceptedAnswers: ['21', '21 pot', 'dua puluh satu'],
-    explanation:
-      'Penambahan pot bunga adalah bertambah 4 tiap baris (+4):\nBaris 1 = 5\nBaris 2 = 9\nBaris 3 = 13\nBaris 4 = 17\nBaris 5 = 21 pot.',
-  },
-
-  // Soal 35 (Isian)
-  {
-    id: 35,
-    type: 'isian',
-    topic: 'Pola Bilangan Perkalian',
-    difficulty: 'Sedang',
-    text: 'Suatu pola bilangan melompat dengan aturan dikalikan 2:\n5, 10, 20, 40, ...\n\nNilai bilangan pada suku kelima adalah...',
-    correctAnswer: '80',
-    acceptedAnswers: ['80', 'delapan puluh'],
-    explanation:
-      'Setiap suku diperoleh dari perkalian 2 dari suku sebelumnya: 5 x 2 = 10; 10 x 2 = 20; 20 x 2 = 40; 40 x 2 = 80.',
   },
 ];

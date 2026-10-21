@@ -248,19 +248,15 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
             <div className="space-y-2 text-xs">
               <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
                 <span>1. Pilihan Ganda (PG)</span>
-                <span className="font-bold text-blue-300">25 Butir</span>
+                <span className="font-bold text-blue-300">20 Butir</span>
               </div>
               <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
                 <span>2. PGK Kategori (Benar / Salah)</span>
                 <span className="font-bold text-amber-300">5 Butir (3 respon/soal)</span>
               </div>
-              <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
-                <span>3. Isian Singkat</span>
-                <span className="font-bold text-emerald-300">5 Butir</span>
-              </div>
               <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-slate-300">
                 <span>Total Butir Soal:</span>
-                <span className="font-extrabold text-white text-sm">35 Soal</span>
+                <span className="font-extrabold text-white text-sm">25 Soal</span>
               </div>
             </div>
 
@@ -271,7 +267,7 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
               </p>
               <p className="flex items-start gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
-                <span>Seluruh 35 soal wajib dijawab sebelum jawaban dapat dikirimkan ke server.</span>
+                <span>Seluruh 25 butir soal wajib dijawab sebelum jawaban dapat dikirimkan ke server.</span>
               </p>
             </div>
           </div>

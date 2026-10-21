@@ -942,8 +942,7 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
               </h3>
               <p className="text-xs text-slate-500">
                 {questions.filter((q) => q.type === 'pg').length} Soal Pilihan Ganda,{' '}
-                {questions.filter((q) => q.type === 'pgk_kategori').length} Soal PGK Kategori,{' '}
-                {questions.filter((q) => q.type === 'isian').length} Soal Isian Singkat
+                {questions.filter((q) => q.type === 'pgk_kategori').length} Soal PGK Kategori (Benar / Salah)
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -953,17 +952,17 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                   onClick={() => {
                     if (
                       confirm(
-                        `Kembalikan seluruh bank soal ke 35 butir standar (25 PG, 5 PGK Kategori, 5 Isian Singkat)?`
+                        `Kembalikan seluruh bank soal ke 25 butir standar (20 PG, 5 PGK Kategori)?`
                       )
                     ) {
                       onResetDefaultQuestions();
                     }
                   }}
                   className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors border border-slate-300 cursor-pointer"
-                  title="Reset seluruh soal ke 35 butir standar Kurikulum Merdeka"
+                  title="Reset seluruh soal ke 25 butir standar Kurikulum Merdeka"
                 >
                   <RotateCcw className="w-3.5 h-3.5 text-slate-600" />
-                  <span>Reset ke 35 Soal Standar</span>
+                  <span>Reset ke 25 Soal Standar</span>
                 </button>
               )}
               <button
@@ -974,12 +973,12 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                   setDownloadNotification({
                     type: 'pdf',
                     title: 'Naskah Soal PDF Berhasil Diunduh!',
-                    message: `Naskah 35 butir soal (${CONFIG.MATA_PELAJARAN} Kelas ${CONFIG.KELAS}) lengkap dengan kop sekolah dan petunjuk ujian berhasil diunduh.`,
+                    message: `Naskah ${questions.length} butir soal (${CONFIG.MATA_PELAJARAN} Kelas ${CONFIG.KELAS}) lengkap dengan kop sekolah dan petunjuk ujian berhasil diunduh.`,
                   });
                   setTimeout(() => setDownloadNotification(null), 5000);
                 }}
                 className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-xl transition-all shadow-sm cursor-pointer"
-                title="Unduh seluruh naskah 35 butir soal dalam format PDF Resmi"
+                title="Unduh seluruh naskah 25 butir soal dalam format PDF Resmi"
               >
                 <Download className="w-4 h-4 text-white" />
                 <span>Unduh Naskah Soal (PDF)</span>

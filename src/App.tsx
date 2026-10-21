@@ -15,7 +15,7 @@ import { Stage3Result } from './components/Stage3Result';
 import { Stage4TeacherPanel } from './components/Stage4TeacherPanel';
 import { TeacherAuthModal } from './components/TeacherAuthModal';
 
-const STORAGE_QUESTIONS_KEY = 'sd3_matematika_pola_questions_v1_35soal';
+const STORAGE_QUESTIONS_KEY = 'sd3_matematika_pola_questions_v2_25soal';
 const STORAGE_ALLOW_REVIEW_KEY = 'sd3_loloan_timur_allow_review';
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
       const saved = localStorage.getItem(STORAGE_QUESTIONS_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        // Pastikan jumlah dan struktur sesuai dengan distribusi soal (35 soal: 25 PG, 5 PGK Kategori, 5 Isian Singkat)
+        // Pastikan jumlah dan struktur sesuai dengan distribusi soal (25 soal: 20 PG, 5 PGK Kategori)
         if (Array.isArray(parsed) && parsed.length === INITIAL_QUESTIONS.length) {
           return parsed;
         }

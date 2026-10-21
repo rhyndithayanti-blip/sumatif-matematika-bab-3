@@ -135,7 +135,7 @@ export function downloadStudentResultPDF(result: ExamResult): void {
   y += 8;
 
   // Baris-baris tabel
-  const totalQuestionsCount = (result.benar || 0) + (result.salah || 0) > 0 ? (result.benar || 0) + (result.salah || 0) : 35;
+  const totalQuestionsCount = (result.benar || 0) + (result.salah || 0) > 0 ? (result.benar || 0) + (result.salah || 0) : 25;
   const tableRows = [
     { label: 'Jumlah Soal Keseluruhan', value: `${totalQuestionsCount} Butir Soal` },
     { label: 'Jumlah Jawaban Benar', value: `${result.benar} Soal` },
